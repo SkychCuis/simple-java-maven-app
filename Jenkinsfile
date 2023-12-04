@@ -10,6 +10,7 @@ pipeline {
                 echo "Build Stage Test 2"
                 sh "mvn --version"
                 sh "mvn clean package"
+                ls -lh
             }
         }
     }
