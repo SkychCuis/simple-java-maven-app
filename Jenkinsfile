@@ -11,7 +11,8 @@ pipeline {
                 sh "mvn --version"
                 sh "mvn clean package"
                 sh "ls -lh"
-                sh "sleep 30"
+                sh "docker ps "
+                sh "docker image list"
                 sh "pwd"
             }
         }
